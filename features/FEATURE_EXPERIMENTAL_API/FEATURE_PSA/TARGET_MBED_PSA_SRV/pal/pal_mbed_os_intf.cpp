@@ -22,6 +22,7 @@
 #include "pal_common.h"
 
 #include "psa/crypto.h"
+#include "entropy.h"
 #include "entropy_poll.h"
 
 #include "psa_attest_inject_key.h"
