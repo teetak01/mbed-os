@@ -19,6 +19,8 @@
 #include "crypto.h"
 #include "mbed_toolchain.h"
 
+#if DEVICE_TRNG
+
 MBED_WEAK void trng_init(trng_t *obj)
 {
     (void)(obj);
@@ -51,3 +53,5 @@ MBED_WEAK int trng_get_bytes(trng_t *obj, uint8_t *output, size_t length, size_t
 
     return 0;
 }
+
+#endif
